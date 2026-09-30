@@ -10,6 +10,7 @@
 - فازها — [`docs/PHASES.md`](docs/PHASES.md)
 - راه‌اندازی بات و کانال تلگرام — [`docs/TELEGRAM_SETUP.md`](docs/TELEGRAM_SETUP.md)
 - راهنمای پنل برای دمو به تیم — [`docs/PANEL_GUIDE.md`](docs/PANEL_GUIDE.md)
+- استقرار امن روی سرور (Docker) — [`docs/DEPLOY.md`](docs/DEPLOY.md)
 
 ## راه‌اندازی محلی
 
