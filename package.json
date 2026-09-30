@@ -1,0 +1,14 @@
+{
+  "name": "finnap",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter @finnap/api --filter @finnap/admin dev",
+    "dev:api": "pnpm --filter @finnap/api dev",
+    "dev:admin": "pnpm --filter @finnap/admin dev",
+    "build": "pnpm -r build",
+    "db:generate": "pnpm --filter @finnap/api prisma:generate",
+    "db:migrate": "pnpm --filter @finnap/api prisma:migrate",
+    "db:seed": "pnpm --filter @finnap/api prisma:seed"
+  }
+}

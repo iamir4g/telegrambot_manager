@@ -1,0 +1,18 @@
+services:
+  api:
+    build:
+      context: ./apps/api
+    ports:
+      - '3001:3001'
+    environment:
+      DATABASE_URL: file:/data/finnap.db
+      JWT_SECRET: change-me-in-production
+      SETTINGS_ENCRYPTION_KEY: change-me-32-char-encryption-key
+      PORT: 3001
+      CORS_ORIGIN: http://localhost:5173
+    volumes:
+      - finnap_data:/data
+    command: sh -c "npx prisma migrate deploy && node dist/main.js"
+
+volumes:
+  finnap_data:
